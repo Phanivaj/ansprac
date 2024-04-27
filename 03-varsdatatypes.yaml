@@ -1,0 +1,15 @@
+- name: print all datatypes
+  vars:
+   course: "devopsaws"
+   list:
+    -Puppet
+    -Ansible
+    -AWSCloud
+   Expe:
+    devops: 3
+    aws: 4
+   realtime: true
+  tasks:
+  - name: print 
+    ansible.builtin.debug:
+      msg: "Hi I am learning {{course}} in that they teached us {{list}} and experience is {{Expe}} and realtime {{realtime}}"
