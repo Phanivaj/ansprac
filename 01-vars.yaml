@@ -1,7 +1,7 @@
-- name: "learning variables"
+- name: learning variables
   hosts: localhost
   tasks:
-   - name: "learning variables"
+   - name: learning variables
      ansible.builtin.debug:
-     msg "hi Im learning {{course}} course duration is {{Time}}, tools we are learning {{Tools}}"
+     msg: "hi Im learning {{course}} course duration is {{Time}}, tools we are learning {{Tools}}"
 
