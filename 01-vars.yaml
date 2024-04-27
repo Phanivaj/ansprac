@@ -16,6 +16,6 @@
       timing: "2 PM"
       City : "Hyderabad"
      ansible.builtin.debug:
-      msg: "Hi I am going to Goa at {{timing}} to {{city}}"   
+       msg: "Hi I am going to Goa at {{timing}} to {{city}}"   
    
  
