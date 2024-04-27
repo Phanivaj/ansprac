@@ -20,8 +20,8 @@
      ansible.builtin.debug:
        msg: "Hi I am going to Goa at {{timing}} to {{city}}"
    - name: message from file
-      ansible.builtin.debug:
-       msg: "Hi {{wishes}}"     
+     ansible.builtin.debug:
+      msg: "Hi {{wishes}}"     
       
    
  
