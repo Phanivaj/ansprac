@@ -2,6 +2,13 @@
   hosts: localhost
   vars_files:
   - Vars.yaml
+  vars_prompt:
+  - name: usrname
+    prompt: enter username
+    private: false
+  - name: password
+    prompt: enter password
+    private: true
   vars:
    course: "Devops"
    duration: "1 hr"
@@ -21,7 +28,10 @@
        msg: "Hi I am going to Goa at {{timing}} to {{city}}"
    - name: message from file
      ansible.builtin.debug:
-      msg: "Hi hello {{wishes}}"     
+      msg: "Hi hello {{wishes}}"  
+   - name : message from prompt
+     ansible.builtin.debug:
+      msg: "credentials are {{usrname}} and password is {{password}}"    
       
    
  
