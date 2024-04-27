@@ -1,7 +1,7 @@
 - name: learning variables
   hosts: localhost
   vars_files:
-  - Vars.txt
+  - Vars.yaml
   vars:
    course: "Devops"
    duration: "1 hr"
