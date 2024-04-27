@@ -21,7 +21,7 @@
        msg: "Hi I am going to Goa at {{timing}} to {{city}}"
    - name: message from file
      ansible.builtin.debug:
-      msg: "Hi {{wishes}}"     
+      msg: "Hi hello {{wishes}}"     
       
    
  
