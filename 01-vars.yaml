@@ -11,6 +11,11 @@
       duration: "1.9 hr"
      ansible.builtin.debug:
        msg: "Hi I am learning {{course}} and {{tool}} for {{duration}}"
-   
+   - name: learning ansible all vars
+     vars:
+      timing: "2 PM"
+      City : "Hyderabad"
+     ansible.builtin.debug:
+      msg: "Hi I am going to Goa at {{timing}} to {{city}}"   
    
  
