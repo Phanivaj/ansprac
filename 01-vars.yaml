@@ -2,6 +2,6 @@
   hosts: localhost
   tasks:
    - name: "learning variables"
-      ansible.builtin.debug:
-      msg "hi Im learning {{course}} course duration is {{Time}}, tools we are learning {{Tools}}"
+     ansible.builtin.debug:
+     msg "hi Im learning {{course}} course duration is {{Time}}, tools we are learning {{Tools}}"
 
