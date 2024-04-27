@@ -1,5 +1,7 @@
 - name: learning variables
   hosts: localhost
+  vars_files:
+  - Vars.txt
   vars:
    course: "Devops"
    duration: "1 hr"
@@ -16,6 +18,10 @@
       timing: "2 PM"
       city : "Hyderabad"
      ansible.builtin.debug:
-       msg: "Hi I am going to Goa at {{timing}} to {{city}}"   
+       msg: "Hi I am going to Goa at {{timing}} to {{city}}"
+   - name: message from file
+      ansible.builtin.debug:
+       msg: "Hi {{wishes}}"     
+      
    
  
