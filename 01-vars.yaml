@@ -6,11 +6,11 @@
    tool: "ansible"
   tasks:
    - name: learning ansible avriables
-    vars:
-     course: "DevopsAWS"
-     duration: "1.9 hr"
-    ansible.builtin.debug:
-    msg: "Hi I am learning {{course}} and {{tool}} for {{duration}}"
+     vars:
+      course: "DevopsAWS"
+      duration: "1.9 hr"
+     ansible.builtin.debug:
+       msg: "Hi I am learning {{course}} and {{tool}} for {{duration}}"
    
    
  
