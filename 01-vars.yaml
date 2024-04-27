@@ -14,7 +14,7 @@
    - name: learning ansible all vars
      vars:
       timing: "2 PM"
-      City : "Hyderabad"
+      city : "Hyderabad"
      ansible.builtin.debug:
        msg: "Hi I am going to Goa at {{timing}} to {{city}}"   
    
