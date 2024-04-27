@@ -1,8 +1,8 @@
 - name: learning variables
   hosts: localhost
   tasks:
-   - name: learning topic variables
+   - name: learning ansible variables
      ansible.builtin.debug:
-     msg: "Hi hello"
+      msg: "Hi Hello"
    
 
