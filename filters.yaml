@@ -3,9 +3,9 @@
   vars:
    greeting: "hello good morning"
    list:
-    - user: "phani"
-    - age: "26"
-    - address: "Hyderabad"
+     user: "phani"
+     age: "26"
+     address: "Hyderabad"
   tasks:
    - name: print list
      ansible.builtin.debug:
