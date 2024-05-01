@@ -19,8 +19,8 @@
 - name: upper
   hosts: localhost
   vars:
-   greeting: "hello good morning"
+   greeting: "HELLO GOOD morning"
   tasks:
    - name: print upper
      ansible.builtin.debug:
-       msg: "{{ greeting | upper }}"
+       msg: "{{ greeting | lower }}"
