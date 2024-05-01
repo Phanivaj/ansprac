@@ -54,8 +54,8 @@
     - {'key':'trainer', 'value':'phani'}
   tasks:
   - name: before conversion
-     ansible.biuiltin.debug:
+     ansible.builtin.debug:
       msg: "{{ my_list }}"
    - name: after conversion
-     ansible.biuiltin.debug:
+     ansible.builtin.debug:
       msg: "{{my_list | items2dict}}"
