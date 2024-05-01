@@ -6,6 +6,6 @@
     - age: "26"
     - address: "Hyderabad"
   tasks:
-  - name: print list
-    ansible.builtin.debug:
-    msg: "here is the list of variables: {{list}}"
+   - name: print list
+     ansible.builtin.debug:
+       msg: "here is the list of variables: {{list}}"
