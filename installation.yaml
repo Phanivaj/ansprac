@@ -1,0 +1,7 @@
+- name: install mysql
+  hosts: localhost
+  tasks:
+   - name: Installing MySql Server
+     ansible.builtin.dnf:
+      - name: mysql-server
+        state: present
