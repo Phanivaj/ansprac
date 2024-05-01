@@ -2,7 +2,11 @@
   hosts: localhost
   become: yes
   tasks:
-   - name: Installing MySql Server
+   - name: Installing 3 databases
      ansible.builtin.dnf:
-      name: mysql-server
+      name: {{item}}
       state: present
+     loop:
+      - mysql
+      - nginx
+      - postfix
