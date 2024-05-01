@@ -47,3 +47,18 @@
 - name: convert dict to list
   hosts: localhost
   tasks:
+
+- name: items to dictionary
+  hosts: localhost
+  vars:
+   my_list:
+    - {'key':'Couse', 'value':'python'}
+    - {'key':'duration', 'value':'23 hrs'}
+    - {'key':'trainer', 'value':'phani'}
+  tasks:
+   - name: conversion
+     ansible.biuiltin.debug:
+      msg: "{{ my_list }}"
+   - name: conversion
+     ansible.biuiltin.debug:
+      msg: "{{my_list | items2dict}}"
