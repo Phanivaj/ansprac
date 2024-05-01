@@ -1,6 +1,7 @@
 - name: filters
   hosts: localhost
   vars:
+   greeting: "hello good morning"
    list:
     - user: "phani"
     - age: "26"
@@ -15,3 +16,9 @@
    - name: print course
      ansible.builtin.debug:
        msg: "course is {{course | default ('ansible')}}"
+- name: upper
+  hosts: localhost
+  tasks:
+   - name: print upper
+     ansible.builtin.debug:
+      msg: {{greeting | upper}}
