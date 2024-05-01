@@ -16,7 +16,7 @@
    - name: print course
      ansible.builtin.debug:
        msg: "course is {{course | default ('ansible')}}"
-- name: upper
+- name: upper and lower
   hosts: localhost
   vars:
    greeting: "HELLO GOOD morning"
@@ -24,3 +24,10 @@
    - name: print upper
      ansible.builtin.debug:
        msg: "{{ greeting | lower }}"
+- name: remove duplicate numbers
+  hosts: localhost
+  Numbers: [1,2,2,3,3,4,4,5,6,7,899,120,120]
+  tasks:
+   - name: find duplicates and remove
+     ansible.builtin.debuug:
+      msg: "{{ Numbers | unique }}"
