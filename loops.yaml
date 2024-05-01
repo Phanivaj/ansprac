@@ -7,4 +7,4 @@
   - name: check conditions
     ansible.builtin.debug:
      msg: "given value {{value}} is greater than 10"
-     when : value > 10
+    when : value > 10
