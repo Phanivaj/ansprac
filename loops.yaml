@@ -1,11 +1,10 @@
 - name: loops practice
   hosts: localhost
-  vars:
-   details:
-    - name: "phanidra"
-    - Adress: "Hhyderabad"
-    - Age: "36"
+  vars_prompt:
+   - name: value
+     prompt: enter value
   tasks:
-  - name: print loop values
+  - name: check conditions
     ansible.builtin.debug:
-     msg: loop: "{{details}}"
+     msg: "given value {{value}} is greater than 10"
+     when : value > 10
