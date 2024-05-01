@@ -1,0 +1,11 @@
+- name: filters
+  hosts: localhost
+  vars:
+   list:
+    - user: "phani"
+    - age: "26"
+    - address: "Hyderabad"
+  tasks:
+  - name: print list
+    ansible.builtin.debug:
+    msg: "here is the list of variables: {{list}}"
