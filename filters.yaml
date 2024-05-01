@@ -56,6 +56,6 @@
   - name: before conversion
     ansible.builtin.debug:
       msg: "{{ my_list }}"
-   - name: after conversion
-     ansible.builtin.debug:
+  - name: after conversion
+    ansible.builtin.debug:
       msg: "{{my_list | items2dict}}"
