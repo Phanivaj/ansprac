@@ -18,6 +18,8 @@
        msg: "course is {{course | default ('ansible')}}"
 - name: upper
   hosts: localhost
+  vars:
+   greeting: "hello good morning"
   tasks:
    - name: print upper
      ansible.builtin.debug:
