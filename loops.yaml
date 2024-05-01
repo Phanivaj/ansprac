@@ -4,7 +4,7 @@
    - name: print loop items
      ansible.builtin.debug:
       msg : "hello :{{item}}"
-    loop:
-     - linux
-     - unix
-     - ML
+     loop:
+      - linux
+      - unix
+      - ML
