@@ -12,7 +12,7 @@
        msg: "here is the list of variables: {{ list }}"
    - name: print list
      ansible.builtin.debug:
-       msg: "here is the list of variables: {{ list | items2dict }}"
+       msg: "here is the list of variables: {{ list | dict2items }}"
 - name: filters
   hosts: localhost
   tasks:
