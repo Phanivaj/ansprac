@@ -1,11 +1,11 @@
 - name: loops practice
   hosts: localhost
   vars:
-  details:
-   - name: "phanidra"
-   - Adress: "Hhyderabad"
-   - Age: "36"
+   details:
+    - name: "phanidra"
+    - Adress: "Hhyderabad"
+    - Age: "36"
   tasks:
   - name: print loop values
     ansible.builtin.debug:
-    msg: loop: "{{details}}"
+     msg: loop: "{{details}}"
