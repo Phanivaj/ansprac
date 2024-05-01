@@ -9,7 +9,10 @@
   tasks:
    - name: print list
      ansible.builtin.debug:
-       msg: "here is the list of variables: {{list}}"
+       msg: "here is the list of variables: {{ list}}"
+   - name: print list
+     ansible.builtin.debug:
+       msg: "here is the list of variables: {{ list | list2dict }}"
 - name: filters
   hosts: localhost
   tasks:
@@ -41,3 +44,6 @@
    - name: print minimun and maximum age from list
      ansible.builtin.debug:
       msg: "maximum age is:{{ ages | max }}, minimum age is:{{ ages | min }}"
+- name: convert dict to list
+  hosts: localhost
+  tasks:
