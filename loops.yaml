@@ -3,8 +3,13 @@
   vars_prompt:
    - name: value
      prompt: enter value
+     private: no
   tasks:
   - name: check conditions
     ansible.builtin.debug:
      msg: "given value {{value}} is greater than 10"
-    when : value > 10
+    when : value | int > 10
+  - name: check conditions
+    ansible.builtin.debug:
+     msg: "given value {{value}} is less than 10"
+    when : value | int < 10
