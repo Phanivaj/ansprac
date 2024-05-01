@@ -9,10 +9,10 @@
   tasks:
    - name: print list
      ansible.builtin.debug:
-       msg: "here is the list of variables: {{ list}}"
+       msg: "here is the list of variables: {{ list }}"
    - name: print list
      ansible.builtin.debug:
-       msg: "here is the list of variables: {{ list | list2dict }}"
+       msg: "here is the list of variables: {{ list | items2dict }}"
 - name: filters
   hosts: localhost
   tasks:
