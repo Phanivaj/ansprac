@@ -9,4 +9,7 @@
    - name: print list
      ansible.builtin.debug:
        msg: "here is the list of variables: {{list}}"
+   tasks:
+   - name: print list
+     ansible.builtin.debug:
        msg: "course is {{course | default ('ansible')}}"
