@@ -44,10 +44,7 @@
    - name: print minimun and maximum age from list
      ansible.builtin.debug:
       msg: "maximum age is:{{ ages | max }}, minimum age is:{{ ages | min }}"
-- name: convert dict to list
-  hosts: localhost
-  tasks:
-
+    
 - name: items to dictionary
   hosts: localhost
   vars:
@@ -56,9 +53,9 @@
     - {'key':'duration', 'value':'23 hrs'}
     - {'key':'trainer', 'value':'phani'}
   tasks:
-   - name: conversion
+  - name: before conversion
      ansible.biuiltin.debug:
       msg: "{{ my_list }}"
-   - name: conversion
+   - name: after conversion
      ansible.biuiltin.debug:
       msg: "{{my_list | items2dict}}"
